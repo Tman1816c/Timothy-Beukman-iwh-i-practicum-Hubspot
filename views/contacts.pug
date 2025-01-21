@@ -1,15 +1,14 @@
-//- ** This is a sample of a pug template and how it uses the data passed to it from index.js.
-
-//- doctype html
-//- html 
-//-     head 
-//-         title= `${title}`
-//-         meta(name="viewport" content="width=device-width, initial-scale=1")
-//-         link(rel="stylesheet", href="/css/style.css")
-//-     body    
-//-         h1 Contacts
-//-         .cards 
-//-             each contact in data
-//-                 .card 
-//-                     h2.card__name #{contact.properties.firstname}  #{contact.properties.lastname}
-//-                     p.card__email #{contact.properties.email}
+doctype html
+html
+    head
+        title= title
+    body
+        h1 Update Custom Object Form
+        form(action='/update-cobj', method='POST')
+            label(for='name') Name:
+            input(type='text', id='name', name='name', required=true)
+            label(for='description') Description:
+            input(type='text', id='description', name='description', required=true)
+            label(for='category') Category:
+            input(type='text', id='category', name='category', required=true)
+            button(type='submit') Submit
