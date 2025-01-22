@@ -1,9 +1,13 @@
-doctype html
 html
     head
-        title Homepage
+        title= title
     body
-        h1 Pets List
+        h1= title
+        
+        //- Add a link to go to the form to add a new custom object
+        a(href="/update-cobj") Add to this table
+        
+        //- Display data in a table
         table
             thead
                 tr
@@ -11,9 +15,8 @@ html
                     th Description
                     th Category
             tbody
-                each pet in pets
+                each record in crmData
                     tr
-                        td= pet.properties.name
-                        td= pet.properties.description
-                        td= pet.properties.category
-        a(href='/update-cobj') Add to this table
+                        td= record.properties.name
+                        td= record.properties.description
+                        td= record.properties.category
