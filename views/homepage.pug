@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Car Records
+    a(href='/update-cobj', class='button') Add New Car
+    
+    if records && records.length > 0
+      table
+        thead
+          tr
+            th Car Name
+            th Description
+            th Category
+            th Created Date
+        tbody
+          each record in records
+            tr
+              td= record.properties.name
+              td= record.properties.description
+              td= record.properties.category
+              td= record.properties.createDate
+    else
+      p No cars found. Add a new car to get started.

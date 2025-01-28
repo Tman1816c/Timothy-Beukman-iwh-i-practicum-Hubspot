@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Create New Car Record
+    form(action='/update-cobj', method='POST')
+      div.form-group
+        label(for='name') Car Name:
+        input(type='text', id='name', name='name', required)
+      
+      div.form-group
+        label(for='description') Description:
+        textarea(id='description', name='description', required)
+      
+      div.form-group
+        label(for='category') Category:
+        input(type='text', id='category', name='category', required)
+      
+      div.form-actions
+        button(type='submit', class='button') Create Car Record
+        a(href='/', class='button secondary') Return to Homepage

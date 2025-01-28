@@ -1,0 +1,103 @@
+/* Global styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f8fa;
+  color: #33475b;
+}
+
+h1 {
+  color: #2e475d;
+  margin-bottom: 30px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dfe3eb;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f5f8fa;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #cbd6e2;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ff7a59;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #ff8f73;
+}
+
+.button.secondary {
+  background-color: #cbd6e2;
+  margin-left: 10px;
+}
+
+.button.secondary:hover {
+  background-color: #b4c2d3;
+}
+
+/* Form actions */
+.form-actions {
+  margin-top: 30px;
+}
+
+/* Messages */
+p {
+  background-color: white;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
